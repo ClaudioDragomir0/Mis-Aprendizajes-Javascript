@@ -16,3 +16,26 @@ Usa un bucle o el método adecuado para buscar el producto.
 
 Usa condicionales para mostrar el mensaje correspondiente. */
 
+// 1. Array con 5 productos
+
+let inventario = ["pan", "leche", "huevos", "queso", "arroz"];
+
+// 2. Pedir al usuario un producto
+
+let productoBuscado = prompt("¿Qué producto buscas?");
+
+// 3. Buscar el producto en el inventario
+
+if (inventario.includes(productoBuscado)) {
+
+  // 4. Si existe, mostrar mensaje
+
+  console.log("Producto disponible");
+
+} else {
+
+  // Si no existe, mostrar otro mensaje
+
+  console.log("Producto no encontrado");
+  
+}
