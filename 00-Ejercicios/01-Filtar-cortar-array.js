@@ -14,18 +14,8 @@ Usa un condicional para comprobar la primera letra de cada nombre.
 
 Usa una variable para llevar la cuenta. */
 
-let nombresEmpiezanconA = 0;
+const nombres = ["Ana", "Luis", "Carlos", "Alberto", "María", "Antonio", "Pedro", "Andrea"];
 
-const nombrePersonas = ["Max", "Curly", "Pedro", "Rafaela", "Héctor", "César", "Alice", "Aiden", "Elliot", "Dante"];
+const nombresConA = nombres.filter(nombre => nombre[0] === "A");
 
-for (let index = 0; index < nombrePersonas.length; index++) {
-
-    if (nombrePersonas.filter(nombrePersonas => nombrePersonas[0] == "A" || "a")) {
-
-        nombresEmpiezanconA++;
-
-    }
-    
-}
-
-console.log("Hay solo " + nombresEmpiezanconA + " nombres que empiezan por la A");
+console.log(`Nombres que empiezan con "A": ${nombresConA.length}`);
